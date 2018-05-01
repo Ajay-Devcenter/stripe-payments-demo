@@ -56,7 +56,7 @@ The [Sources API](https://stripe.com/docs/sources) provides a single integration
 
 The frontend code for the demo is in the `public/` directory.
 
-There are a couple implementations of the server, all located in the `server/` directory. Instructions for running the [Node.js server](/server/node) are below, but if you're more comfortable with Python you can find a README explaining how to run the [Python version](/server/python) in the `server/python` directory. Both servers contain the same endpoints to handle requests from the frontend and interact with the [Stripe libraries](https://stripe.com/docs/libraries).
+There are a couple server implementations, all located in the [`server/`](/server) directory. Instructions for running the [Node.js server](/server/node) are below, but if you're more comfortable with Python you can find a README explaining how to run the [Python version](/server/python) in the `server/python/` directory. Both servers have the same endpoints to handle requests from the frontend and interact with the [Stripe libraries](https://stripe.com/docs/libraries).
 
 ### Requirements
 
@@ -76,9 +76,9 @@ Copy the environment variables file from the root of the repository:
 
     cp .env.example .env
 
-Update `.env` with your own [Stripe API keys](https://dashboard.stripe.com/account/apikeys) and any other configuration details. These environment variables are loaded and used in [`config.js`](config.js), where you can review and edit other options such as the app currency and your Stripe account country.
+Update `.env` with your own [Stripe API keys](https://dashboard.stripe.com/account/apikeys) and any other configuration details. These environment variables are loaded and used in [`server/node/config.js`](config.js), where you can review and edit other options such as the app currency and your Stripe account country.
 
-Install dependencies using npm:
+Install dependencies using npm in the `server/node/` directory:
 
     npm install
 
