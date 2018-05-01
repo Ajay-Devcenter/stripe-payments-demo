@@ -56,7 +56,7 @@ The [Sources API](https://stripe.com/docs/sources) provides a single integration
 
 The frontend code for the demo is in the `public/` directory.
 
-There are a couple server implementations in the [`server/`](/server) directory. Instructions for running the Node.js server in [/server/node/](/server/node) are below, but if you're more comfortable with Python you can find a README explaining how to run a Flask server in the [`server/python/`](/server/python) directory. Both servers have the same endpoints to handle requests from the frontend and interact with the [Stripe libraries](https://stripe.com/docs/libraries).
+There are a couple server implementations in the [`server/`](/server) directory. Instructions for running the Node.js server in [`/server/node/`](/server/node) are below, but if you're more comfortable with Python you can find a README explaining how to run a Flask server in the [`server/python/`](/server/python) directory. Both servers have the same endpoints to handle requests from the frontend and interact with the [Stripe libraries](https://stripe.com/docs/libraries).
 
 ### Requirements
 
